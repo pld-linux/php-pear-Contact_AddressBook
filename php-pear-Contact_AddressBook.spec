@@ -9,18 +9,18 @@ Summary(pl):	%{_pearname} - Klasa do importowania/eksportowania ksi±¿ki adresowe
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
 Release:	1
-License:	PHP 2.02
+License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}dev1.tgz
 # Source0-md5:	7cb8111400f3884a0e854a52dfdc1af7
-URL:		http://pear.php.net/package/Class_Subclass/
+URL:		http://pear.php.net/package/Contact_AddressBook/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Package provide export-import address book mechanism.
+Package provides export-import address book mechanism.
 Contact_AddressBook refers to needed structure, convert the various
 address book structure format into it, then you can easily store it
 into file, database or another storage media.
