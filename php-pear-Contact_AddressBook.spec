@@ -27,9 +27,14 @@ into file, database or another storage media.
 
 In PEAR status of this package is: %{_status}.
 
-#%description -l pl
-#
-#Ta klasa ma w PEAR status: %{_status}.
+%description -l pl
+Ten pakiet dostarcza mechanizm exportowania/importowania ksi±¿ki
+adresowej. Contact_AddressBook odwo³uje siê do wymaganej struktury,
+konwertuje do jej formatu ró¿ne formaty ksi±¿ek adresowych, które
+nastêpnie mo¿na ³atwo zapisaæ do pliku, bazy danych lub na inny
+no¶nik.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
