@@ -8,13 +8,13 @@ Summary:	%{_pearname} - Address book export-import class
 Summary(pl):	%{_pearname} - Klasa do importowania/eksportowania ksi±¿ki adresowej
 Name:		php-pear-%{_pearname}
 Version:	0.1.0
-Release:	1
+Release:	1.1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}dev1.tgz
 # Source0-md5:	7cb8111400f3884a0e854a52dfdc1af7
 URL:		http://pear.php.net/package/Contact_AddressBook/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -37,20 +37,22 @@ no¶nik.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-
-install %{_pearname}-%{version}dev1/%{_class}/%{_subclass}.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/
-install %{_pearname}-%{version}dev1/%{_class}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}dev1/{README.txt,examples,gateaway,definitions}
+%doc install.log
+%doc docs/%{_pearname}/{README.txt,examples,gateaway}
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}.php
 %{php_pear_dir}/%{_class}/%{_subclass}
+
+%{php_pear_dir}/data/%{_pearname}
