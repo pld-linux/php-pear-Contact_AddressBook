@@ -14,7 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}dev1.tgz
 # Source0-md5:	7cb8111400f3884a0e854a52dfdc1af7
 URL:		http://pear.php.net/package/Contact_AddressBook/
-BuildRequires:	rpm-php-pearprov >= 4.4.2-10.2
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
