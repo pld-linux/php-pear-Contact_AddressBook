@@ -19,7 +19,7 @@ URL:		http://pear.php.net/package/Contact_AddressBook/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear >= 4:1.0-7
 Requires:	php-pear-PEAR >= 1:1.2.1
-Requires:	php-pear-File >= 1.0.3
+Requires:	php-pear-File >= 1.2.1
 Requires:	php-pear-Net_UserAgent_Detect >= 2.0.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
