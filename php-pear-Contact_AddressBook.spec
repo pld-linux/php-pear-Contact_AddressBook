@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 %define	_rc alpha1
-%define	_rel 1
+%define	_rel 2
 Summary:	%{_pearname} - Address book export-import class
 Summary(pl):	%{_pearname} - Klasa do importowania/eksportowania ksi±¿ki adresowej
 Name:		php-pear-%{_pearname}
