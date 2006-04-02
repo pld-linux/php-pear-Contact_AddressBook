@@ -4,17 +4,15 @@
 %define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 
-%define	_rc alpha1
-%define	_rel 2
 Summary:	%{_pearname} - Address book export-import class
 Summary(pl):	%{_pearname} - Klasa do importowania/eksportowania ksi±¿ki adresowej
 Name:		php-pear-%{_pearname}
-Version:	0.4.0
-Release:	0.%{_rc}.%{_rel}
+Version:	0.5.0
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
-# Source0-md5:	6258c16aef639444408549020260318b
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
+# Source0-md5:	9834f0a60102160a7ea983441e277734
 URL:		http://pear.php.net/package/Contact_AddressBook/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
