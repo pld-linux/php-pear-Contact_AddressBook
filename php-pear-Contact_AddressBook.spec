@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Address book export-import class
-Summary(pl):	%{_pearname} - Klasa do importowania/eksportowania ksi±¿ki adresowej
+Summary(pl.UTF-8):   %{_pearname} - Klasa do importowania/eksportowania ksiÄ…Å¼ki adresowej
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
 Release:	1
@@ -32,12 +32,12 @@ into file, database or another storage media.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet dostarcza mechanizm exportowania/importowania ksi±¿ki
-adresowej. Contact_AddressBook odwo³uje siê do wymaganej struktury,
-konwertuje do jej formatu ró¿ne formaty ksi±¿ek adresowych, które
-nastêpnie mo¿na ³atwo zapisaæ do pliku, bazy danych lub na inny
-no¶nik.
+%description -l pl.UTF-8
+Ten pakiet dostarcza mechanizm exportowania/importowania ksiÄ…Å¼ki
+adresowej. Contact_AddressBook odwoÅ‚uje siÄ™ do wymaganej struktury,
+konwertuje do jej formatu rÃ³Å¼ne formaty ksiÄ…Å¼ek adresowych, ktÃ³re
+nastÄ™pnie moÅ¼na Å‚atwo zapisaÄ‡ do pliku, bazy danych lub na inny
+noÅ›nik.
 
 Ta klasa ma w PEAR status: %{_status}.
 
