@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - Address book export-import class
-Summary(pl.UTF-8):   %{_pearname} - Klasa do importowania/eksportowania książki adresowej
+Summary(pl.UTF-8):	%{_pearname} - Klasa do importowania/eksportowania książki adresowej
 Name:		php-pear-%{_pearname}
 Version:	0.5.0
 Release:	1
