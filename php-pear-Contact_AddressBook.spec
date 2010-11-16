@@ -1,20 +1,17 @@
 %include	/usr/lib/rpm/macros.php
-%define		_class		Contact
-%define		_subclass	AddressBook
 %define		_status		alpha
-%define		_pearname	%{_class}_%{_subclass}
-
+%define		_pearname	Contact_AddressBook
 Summary:	%{_pearname} - Address book export-import class
 Summary(pl.UTF-8):	%{_pearname} - Klasa do importowania/eksportowania książki adresowej
 Name:		php-pear-%{_pearname}
-Version:	0.5.0
-Release:	2
+Version:	0.5.1
+Release:	1
 License:	BSD
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	9834f0a60102160a7ea983441e277734
+# Source0-md5:	ddda434205ea62c06e40048b59cf1b0d
 URL:		http://pear.php.net/package/Contact_AddressBook/
-BuildRequires:	php-pear-PEAR
+BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-pear >= 4:1.0-7
@@ -57,7 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc install.log
 %doc docs/%{_pearname}/docs/*
 %{php_pear_dir}/.registry/*.reg
-%{php_pear_dir}/%{_class}/%{_subclass}.php
-%{php_pear_dir}/%{_class}/%{_subclass}
+%{php_pear_dir}/Contact/AddressBook.php
+%{php_pear_dir}/Contact/AddressBook
 
 %{php_pear_dir}/data/%{_pearname}
