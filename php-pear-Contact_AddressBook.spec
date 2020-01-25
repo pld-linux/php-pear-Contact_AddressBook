@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.php
 %define		_status		alpha
 %define		_pearname	Contact_AddressBook
 Summary:	%{_pearname} - Address book export-import class
